@@ -16,7 +16,7 @@ from pprint import pprint
 
 import pywhatkit as pwk
 
-MASTER = "Yaash"
+MASTER = "Master"
 print("Initializing Zip...")
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -28,6 +28,7 @@ def add(name,address):
     name=input('enter the app name ')
     speak('Enter the address')
     address=input('enter the address')
+    
     
 
 def speak(audio):
@@ -196,8 +197,7 @@ if __name__ == "__main__":
         elif 'github' in query:
             speak('Opening Github Sir!')
             search_term = takeCommand().lower()
-            speak('Opening your Account Sir!')
-            url = 'github.com'
+            speak('Opening your Account Sir!'
             webbrowser.open('https://www.github.com/youraccount')
         
         elif 'cpu' in query:
@@ -272,6 +272,4 @@ if __name__ == "__main__":
         
         elif 'add' in query:
             add(name,dir)
-            speak('Enter the app name ')
-            name=input()
-            sepak('enter the directory')            
+            webbrowser.open('dir')
