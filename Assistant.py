@@ -17,7 +17,7 @@ from pprint import pprint
 import pywhatkit as pwk
 
 MASTER = "Master"
-print("Initializing Zip...")
+print("Initializing Zep...")
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
@@ -266,7 +266,7 @@ if __name__ == "__main__":
             else:
                 pwk.playonyt(songOrArtist) 
         elif 'who are you' in query:
-            speak("I am Zoya, The Smart Assistant of Yaash, Developed to help him around with his work and makes his life easier with his machine")
+            speak("I am Zep, The Smart Assistant of Yaash, Developed to help him around with his work and makes his life easier with his machine")
         elif 'who is momo' in query:
             momo()
         
